@@ -1,8 +1,11 @@
-function App() {
+import React from 'react'
+import { ColorPicker } from './components/ColorPicker'
+
+const App: React.FC = () => {
   return (
-    <>
-      <h1>React Template</h1>
-    </>
+    <div className="h-screen w-screen flex items-center justify-center p-4">
+      <ColorPicker />
+    </div>
   )
 }
 
