@@ -15,7 +15,7 @@ describe('CopyButton', () => {
       <CopyButton colorCode="#ff0000" />
     )
 
-    await fireEvent.click(getByText(/#ff0000をコピー/))
+    await fireEvent.click(getByText(/#ff0000/))
 
     expect(navigator.clipboard.writeText).toHaveBeenCalledWith('#ff0000')
 
@@ -46,7 +46,7 @@ describe('CopyButton', () => {
     const { getByText } = render(<CopyButton colorCode="#ff0000" />)
 
     // コピーボタンをクリック
-    fireEvent.click(getByText(/#ff0000をコピー/))
+    fireEvent.click(getByText(/#ff0000/))
 
     // エラーがコンソールに出力されることを確認
     await waitFor(() => {

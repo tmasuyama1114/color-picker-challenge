@@ -8,9 +8,9 @@ export const ColorFormatSelector: React.FC<ColorFormatSelectorProps> = ({
   <div className="flex items-center gap-4">
     <button
       onClick={() => onFormatChange('hex')}
-      className={`px-3 py-1 rounded-md ${
+      className={`h-10 px-3 py-1 rounded-md ${
         format === 'hex'
-          ? 'bg-blue-600 text-white'
+          ? 'bg-gray-600 text-white'
           : 'bg-gray-200 text-gray-700'
       }`}
     >
@@ -18,9 +18,9 @@ export const ColorFormatSelector: React.FC<ColorFormatSelectorProps> = ({
     </button>
     <button
       onClick={() => onFormatChange('rgb')}
-      className={`px-3 py-1 rounded-md ${
+      className={`h-10 px-3 py-1 rounded-md ${
         format === 'rgb'
-          ? 'bg-blue-600 text-white'
+          ? 'bg-gray-600 text-white'
           : 'bg-gray-200 text-gray-700'
       }`}
     >

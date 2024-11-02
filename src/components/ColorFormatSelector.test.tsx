@@ -19,6 +19,6 @@ describe('ColorFormatSelector', () => {
     )
 
     const hexButton = getByText('HEX')
-    expect(hexButton).toHaveClass('bg-blue-600', 'text-white')
+    expect(hexButton).toHaveClass('bg-gray-600', 'text-white')
   })
 })
