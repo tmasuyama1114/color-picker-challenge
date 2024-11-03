@@ -13,7 +13,7 @@
     "format:check": "prettier --check .",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
-    "test:coverage": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage --coverage.reporter=text",
     "prepare": "husky install",
     "check": "npm run lint && npm run format:check && npm run test"
   },
